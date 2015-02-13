@@ -1,0 +1,899 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Doubledating connection</title>
+
+		<meta name="description" content="3 styles with inline editable feature" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="resources/assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="resources/assets/css/font-awesome.css" />
+		
+		<link rel="stylesheet" href="resources/assets/css1/style.css" />
+
+		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="resources/assets/css/jquery-ui.custom.css" />
+		<link rel="stylesheet" href="resources/assets/css/jquery.gritter.css" />
+		<link rel="stylesheet" href="resources/assets/css/select2.css" />
+		<link rel="stylesheet" href="resources/assets/css/datepicker.css" />
+		<link rel="stylesheet" href="resources/assets/css/bootstrap-editable.css" />
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="resources/assets/css/ddc-fonts.css" />
+		
+		<link rel="stylesheet" href="resources/assets/css/ddc.onpage-help.css" />
+		<link rel="stylesheet" href="resources/docs/assets/js/themes/sunburst.css" />
+		
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="resources/assets/css/ddc.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="resources/assets/js/ace-extra.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	
+	
+	
+	
+	
+	<body class="no-skin">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<!-- #section:basics/sidebar.mobile.toggle -->
+<!-- 				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar"> -->
+<!-- 					<span class="sr-only">Toggle sidebar</span> -->
+
+<!-- 					<span class="icon-bar"></span> -->
+
+<!-- 					<span class="icon-bar"></span> -->
+
+<!-- 					<span class="icon-bar"></span> -->
+<!-- 				</button> -->
+
+				<!-- /section:basics/sidebar.mobile.toggle -->
+				<div class="navbar-header pull-left">
+					<!-- #section:basics/navbar.layout.brand -->
+					<a href="#" class="navbar-brand">
+						<small>
+<!-- 							<i class="fa fa-leaf"></i> -->
+							doubledating connections
+						</small>
+					</a>
+
+					<!-- /section:basics/navbar.layout.brand -->
+
+					<!-- #section:basics/navbar.toggle -->
+
+					<!-- /section:basics/navbar.toggle -->
+				</div>
+
+				<!-- #section:basics/navbar.dropdown -->
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
+								Messages
+<!-- 								<span class="badge badge-success">5</span> -->
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									5 Messages
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Alex:</span>
+														Ciao sociis natoque penatibus et auctor ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>a moment ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Susan:</span>
+														Vestibulum id ligula porta felis euismod ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>20 minutes ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Bob:</span>
+														Nullam quis risus eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>3:15 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kate:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Fred:</span>
+														Vestibulum id penatibus et auctor  ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>10:09 am</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										See all messages
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- #section:basics/navbar.user_menu -->
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="viewprofile.html">
+										<i class="ace-icon fa fa-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="index.html">
+										<i class="ace-icon fa fa-power-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- /section:basics/navbar.user_menu -->
+					</ul>
+				</div>
+
+				<!-- /section:basics/navbar.dropdown -->
+			</div><!-- /.navbar-container -->
+		</div>
+
+		
+		
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<!-- #section:basics/sidebar -->
+			<div id="sidebar" class="sidebar                  responsive">
+				<script type="text/javascript">
+					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+				</script>
+				
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div>
+				
+
+				<ul class="nav nav-list">
+					<li class="">
+						<a href="dashboard.html">
+<!-- 							<i class="menu-icon fa fa-tachometer"></i> -->
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="browsecouples.html">
+<!-- 							<i class="menu-icon fa fa-tachometer"></i> -->
+							<span class="menu-text"> Browse Couples </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="inbox.html">
+<!-- 							<i class="menu-icon fa fa-tachometer"></i> -->
+							<span class="menu-text"> Messages </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+				</ul><!-- /.nav-list -->
+
+				<!-- #section:basics/sidebar.layout.minimize -->
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+
+				<!-- /section:basics/sidebar.layout.minimize -->
+				<script type="text/javascript">
+					try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+				</script>
+			</div>
+			
+			
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="browseCouples">Home</a>
+							</li>
+
+<!-- 							<li> -->
+<!-- 								<a href="#">Dashboard</a> -->
+<!-- 							</li> -->
+<!-- 							<li class="active">Dashboard</li> -->
+						</ul><!-- /.breadcrumb -->
+
+						<!-- #section:basics/content.searchbox -->
+						<!-- <div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div> --><!-- /.nav-search -->
+
+						<!-- /section:basics/content.searchbox -->
+					</div>
+
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content">
+						
+						
+
+						<div class="row">
+							<div class="col-xs-12">
+								
+								<div class="space-4"></div>
+
+								
+								
+								<div >
+									<div id="user-profile-3" class="user-profile row">
+										<div class="col-sm-offset-1 col-sm-10">
+											
+											
+   <div class="space"></div>
+      
+                       
+                       
+                       
+      <form class="form-horizontal">
+												
+		<div class="tabbable">
+				  	 											
+		<div class="tab-content profile-edit-tab-content">
+		<p>					
+     <span class="btn btn-info btn-sm popover-info pull-right" data-rel="popover" data-placement="bottom" title="Text Message"
+      data-content="
+      				    				
+       				<textarea class='form-control col-md-8'></textarea><br/>
+       				
+       				<div class='space-20 '></div>
+       				<button class='btn btn-primary' >Submit</button>
+       				"><i class="ace-icon fa fa-envelope bigger-150"></i>Send Message
+<!--        				<input class='form-group text-center' type='submit' value='submit'/>">Send Message  -->
+     </span>
+                    </p>											
+			
+		 <div id="edit-basic" class="tab-pane in active">
+									
+		 <h4 class="header blue  smaller">My Profile</h4>
+		  <div class="space-20"></div>
+			<div class="row">
+
+		<!-- <div class="col-xs-12 col-sm-4"> -->
+		<!-- 	<input type="file" /> -->
+		<!--  </div> -->
+
+																<div class="vspace-12-sm"></div>
+																
+																<div class="col-md-1"></div>
+
+																<div class="col-xs-12 col-sm-10">
+																	<div class="profile-user-info profile-user-info-striped">
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Firstname </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="username">alexdoe</span>
+																			</div>
+																		</div>
+																		
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Lastname </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="username">John</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Gender </div>
+						
+																			<div class="profile-info-value">
+<!-- 																				<i class="fa fa-map-marker light-orange bigger-110"></i> -->
+																				
+																				<span class="editable editable-click" id="city">Male</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Age </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="age">38</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> HighSchool </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="signup">Church High School</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> University </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="login">Grant's University</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Education </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="about">MCA</span>
+																			</div>
+																		</div>
+																	</div>
+																	</div>
+
+																	
+
+																	
+																</div>
+															</div>
+
+															
+															<div class="space"></div>
+															<h4 class="header blue bolder smaller">My Partner's Profile </h4>
+															
+															<div class="space-20"></div>
+															<div class="row">
+<!-- 																<div class="col-xs-12 col-sm-4"> -->
+<!-- 																	<input type="file" /> -->
+<!-- 																</div> -->
+
+																<div class="vspace-12-sm"></div>
+																
+																<div class="col-md-1"></div>
+
+																<div class="col-xs-12 col-sm-10">
+																	<div class="profile-user-info profile-user-info-striped">
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Firstname </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="username">Andrea</span>
+																			</div>
+																		</div>
+																		
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Lastname </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="username">Loosy</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Gender </div>
+						
+																			<div class="profile-info-value">
+<!-- 																				<i class="fa fa-map-marker light-orange bigger-110"></i> -->
+																				
+																				<span class="editable editable-click" id="city">Female</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Age </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="age">38</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> HighSchool </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="signup">Church High School</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> University </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="login">Grant's University</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Education </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="about">MCA</span>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="space-4"></div>
+
+																	
+																</div>
+															</div>
+															
+															<div class="space-4"></div>
+
+															
+															<div class="space"></div>
+															<h4 class="header blue bolder smaller">About Us </h4>
+															
+															<div class="space-20"></div>
+															<div class="row">
+																<div class="col-md-1 col-sm-1"></div>
+																<div class="col-xs-12 col-sm-3">
+																	<div class="">
+																		<div id="user-profile-1" class="user-profile row">
+																			
+																				<div>
+																					<!-- #section:pages/profile.picture -->
+																					<span class="profile-picture ">
+																						<img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="assets/avatars/profile-pic.jpg" />
+																					</span>
+									
+																					<!-- /section:pages/profile.picture -->
+																															
+																				</div>
+									
+																							
+																			
+									
+																		</div>
+																	</div>
+																</div>
+
+																<div class="vspace-12-sm"></div>
+
+																<div class="col-xs-12 col-sm-8">
+																	<div class="profile-user-info profile-user-info-striped">
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Children </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="username">1</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> City </div>
+						
+																			<div class="profile-info-value">
+<!-- 																				<i class="fa fa-map-marker light-orange bigger-110"></i> -->
+<!-- 																				<span class="editable editable-click" id="country">Netherlands</span> -->
+																				<span class="editable editable-click" id="city">Amsterdam</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> State </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="age">Netherlands</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Your Anniversary </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="signup">2010/06/20</span>
+																			</div>
+																		</div>
+						
+																		
+																	</div>
+
+																	<div class="space-4"></div>
+
+																	
+																</div>
+															</div>
+															
+															<div class="space"></div>
+															
+															<h4 class="header blue bolder smaller">Our Interests </h4>
+															
+															<div class="space-20"></div>
+															
+															
+															<p class="alert alert-info">Playing Cricket, Watching TV, Reading Books, Playing with kids, Bike Riding, Swimming, Cinemas</p>
+															
+															<div class="space-20"></div>
+															
+															<h4 class="header blue bolder smaller">Couples Interests </h4>
+															
+															<div class="space-20"></div>
+															
+															<p class="alert alert-info">Playing Cricket, Watching TV, Reading Books, Playing with kids, Bike Riding, Swimming, Cinemas</p>
+															
+															<div class="space-20"></div>
+															
+															
+															
+															<h4 class="header blue bolder smaller">Combined Preferences </h4>
+															<div class="space-20"></div>
+															<div class="space-20"></div>
+															<div class="row">
+																<div class="col-xs-12 col-sm-1">
+																	
+																</div>
+
+																<div class="vspace-12-sm"></div>
+
+																<div class="col-xs-12 col-sm-10">
+																	<div class="profile-user-info profile-user-info-striped">
+																	
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Age </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="age">24-28</span>
+																			</div>
+																		</div>
+																		
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Ethnicity </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="username">Indian</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Religion </div>
+						
+																			<div class="profile-info-value">
+																				
+																				<span class="editable editable-click" id="city">Hindu</span>
+																			</div>
+																		</div>
+						
+																								
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> City </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="signup">Amsterdam</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> State </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="login">Amsterdam</span>
+																			</div>
+																		</div>
+						
+																		<div class="profile-info-row">
+																			<div class="profile-info-name"> Country </div>
+						
+																			<div class="profile-info-value">
+																				<span class="editable editable-click" id="about">Netherlands</span>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="space-4"></div>
+
+																	
+																</div>
+															</div>
+															
+															
+															<div class="space-4"></div>
+															
+															
+															
+																														
+														
+														
+													
+																												
+													</div>
+												
+												</div>
+
+												
+											
+											</form>
+										</div><!-- /.span -->
+									</div><!-- /.user-profile -->
+								</div>
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+		
+		</div><!-- /.main-container -->
+
+
+
+
+
+
+
+			<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='resources/assets/js/jquery.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery1x.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='resources/assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
+		</script>
+		<script src="resources/assets/js/bootstrap.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.js"></script>
+		<![endif]-->
+				
+		
+		
+		
+		
+		<script src="resources/assets/js/jquery-ui.custom.js"></script>
+		<script src="resources/assets/js/jquery.ui.touch-punch.js"></script>
+		<script src="resources/assets/js/jquery.gritter.js"></script>
+		<script src="resources/assets/js/bootbox.js"></script>
+		<script src="resources/assets/js/jquery.easypiechart.js"></script>
+		<script src="resources/assets/js/date-time/bootstrap-datepicker.js"></script>
+		<script src="resources/assets/js/jquery.hotkeys.js"></script>
+		<script src="resources/assets/js/bootstrap-wysiwyg.js"></script>
+		<script src="resources/assets/js/select2.js"></script>
+		<script src="resources/assets/js/fuelux/fuelux.spinner.js"></script>
+		<script src="resources/assets/js/x-editable/bootstrap-editable.js"></script>
+		<script src="resources/assets/js/x-editable/ace-editable.js"></script>
+		<script src="resources/assets/js/jquery.maskedinput.js"></script>
+		
+
+
+		<!-- ace scripts -->
+		<script src="resources/assets/js/ace/elements.scroller.js"></script>
+		<script src="resources/assets/js/ace/elements.colorpicker.js"></script>
+		<script src="resources/assets/js/ace/elements.fileinput.js"></script>
+		<script src="resources/assets/js/ace/elements.typeahead.js"></script>
+		<script src="resources/assets/js/ace/elements.wysiwyg.js"></script>
+		<script src="resources/assets/js/ace/elements.spinner.js"></script>
+		<script src="resources/assets/js/ace/elements.treeview.js"></script>
+		<script src="resources/assets/js/ace/elements.wizard.js"></script>
+		<script src="resources/assets/js/ace/elements.aside.js"></script>
+		<script src="resources/assets/js/ace/ace.js"></script>
+		<script src="resources/assets/js/ace/ace.ajax-content.js"></script>
+		<script src="resources/assets/js/ace/ace.touch-drag.js"></script>
+		<script src="resources/assets/js/ace/ace.sidebar.js"></script>
+		<script src="resources/assets/js/ace/ace.sidebar-scroll-1.js"></script>
+		<script src="resources/assets/js/ace/ace.submenu-hover.js"></script>
+		<script src="resources/assets/js/ace/ace.widget-box.js"></script>
+		<script src="resources/assets/js/ace/ace.settings.js"></script>
+		<script src="resources/assets/js/ace/ace.settings-rtl.js"></script>
+		<script src="resources/assets/js/ace/ace.settings-skin.js"></script>
+		<script src="resources/assets/js/ace/ace.widget-on-reload.js"></script>
+		<script src="resources/assets/js/ace/ace.searchbox-autocomplete.js"></script>
+		
+		
+		
+		<!-- inline scripts related to this page -->
+		
+  <script type="text/javascript">
+		
+	jQuery(function($) 
+	{
+				
+		
+ 		$('[data-rel=tooltip]').tooltip();
+		$('[data-rel=popover]').popover({html:true}); 
+			
+			
+ 				$('#gritter-regular').on(ace.click_event, function() {
+ 					
+ 				 					$.gritter.add({ 
+ 						title: 'This is a regular notice!', 
+ 						text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="blue">magnis dis parturient</a> montes, nascetur ridiculus mus.', 
+ 						image: 'assets/avatars/avatar1.png', //in Ace demo assets will be replaced by correct assets path 
+ 						sticky: false, 
+ 						time: '', 
+ 						class_name: (!$('#gritter-light').get(0).checked ? 'gritter-light' : '') 
+ 				 					
+ 				 			});
+ 				 					
+ 									return false;
+ 								});
+			
+	
+	      $(document).one('ajaxloadstart.page', function(e) 
+			{
+				$.gritter.removeAll();
+				$('.modal').modal('hide');
+			});
+		
+		});
+
+
+
+</script>
+		
+		
+		
+		
+
+		
+		<!-- the following scripts are used in demo only for onpage help and you don't need them -->
+		
+			
+		
+		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
+		<script src="resources/assets/js/ace/elements.onpage-help.js"></script>
+		<script src="resources/assets/js/ace/ace.onpage-help.js"></script>
+		<script src="resources/assets/docs/assets/js/rainbow.js"></script>
+		<script src="resources/assets/docs/assets/js/language/generic.js"></script>
+		<script src="resources/assets/docs/assets/js/language/html.js"></script>
+		<script src="resources/assets/docs/assets/js/language/css.js"></script>
+		<script src="resources/assets/docs/assets/js/language/javascript.js"></script>
+	</body>
+</html>

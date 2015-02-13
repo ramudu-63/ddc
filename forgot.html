@@ -1,7 +1,7 @@
-   
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head>
+<head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
 		<title>Login Page - doubledatingconnections</title>
@@ -24,22 +24,9 @@
 			<link rel="stylesheet" href="../assets/css/ace-part2.css" />
 		<![endif]-->
 		<link rel="stylesheet" href="resources/assets/css/ddc-rtl.css" />
-
-		<!--[if lte IE 9]>
-		  <link rel="stylesheet" href="../assets/css/ace-ie.css" />
-		<![endif]-->
-
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-		<!--[if lt IE 9]>
-		<script src="../assets/js/html5shiv.js"></script>
-		<script src="../assets/js/respond.js"></script>
-		<![endif]-->
-		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  		<script src="resources/assets/js1/login.js"></script>
-	</head>
-
+		<script src="resources/assets/js1/editProfile.js"></script>		
+</head>
 	<body class="login-layout login-body">
 	
 	<div id="navbar" class="navbar navbar-default">
@@ -65,10 +52,11 @@
 	</div>
 	</div>	
 	
-	
+		
 		<div class="main-container">
 			<div class="main-content">
 				<div class="row">
+					
 					<div class="col-sm-10 col-sm-offset-1">
 						<div class="login-container">
 							<div class="align-left">
@@ -79,7 +67,7 @@
 								</h1> -->
 <!-- 								<h4 class="blue" id="id-company-text">&copy; Company Name</h4> -->
 							</div>
-
+							
 							<div class="space-6"></div>
 
 							<div class="position-relative">
@@ -92,42 +80,82 @@
 											</h4>
 
 											<div class="space-6"></div>
-											
-											<form action="login" method="post">
+
+										
 												<fieldset>
+													
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input class="form-control" placeholder="*Username" path="userName" id="lUserName" />
-															<i class="ace-icon fa fa-user"></i>
 															
+<!-- 															<i class="ace-icon fa fa-retweet"></i> -->
+																
 														</span>
 													</label>
-
+													
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="*Password" path="password" id="lPassword"/>
+															<!-- <input type="password" class="form-control" placeholder="Repeat password" />
+															<i class="ace-icon fa fa-retweet"></i> -->
+																<select class="form-control" path="securityQuestion">
+		    														<option value="-1">Select Question</option>
+		    														<option>What is your pets name ?</option>
+			  														<option>What was the name of your first school ?</option>
+			  														<option>Who was your childhood hero ?</option>
+			  														<option>What is your favorite pass-time ?</option>
+			  														<option>What is your all-time favorite sports team ?</option>
+			  														<option>What is your fathers middle name ?</option>
+			  														<option>What was your high school mascot ?</option>
+			 														<option>What make was your first car or bike ?</option>
+			 														<option>Where did you first meet your spouse ?</option>
+		    													</select>
+																
+														</span>
+													</label>
+													
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="Answer" path="answer" />
+<!-- 															<i class="ace-icon fa fa-retweet"></i> -->
+																
+														</span>
+													</label>
+													
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="New password" path="newPassword" />
 															<i class="ace-icon fa fa-lock"></i>
 															
 														</span>
 													</label>
 
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="Confirm Password" path="confirmPassword" />
+															<i class="ace-icon fa fa-lock"></i>
+															
+														</span>
+													</label>
+													
+													
+
 													<div class="space"></div>
 
 													<div class="clearfix">
-														<label class="inline">
+														<!-- <label class="inline">
 															<input type="checkbox" class="ace" />
 															<span class="lbl"> Remember Me</span>
-														</label>
+														</label> -->
 
-														<a href="welcome.html" type="button" id="login" class="width-35 pull-right btn btn-sm btn-primary">
-															<i class="ace-icon fa fa-key"></i>
-															<span class="bigger-110">Login</span>
-														</a>
+														<button type="submit" id="login" class="width-35 pull-right btn btn-sm btn-primary">
+<!-- 															<i class="ace-icon fa fa-key"></i> -->
+															<span class="bigger-110">Submit</span>
+															<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+														</button>
 													</div>
 
 													<div class="space-4"></div>
 												</fieldset>
-											</form>
+											
 
 											<div class="social-or-login center">
 <!-- 												<span class="bigger-110">Or Login Using</span> -->
@@ -150,23 +178,23 @@
 <!-- 											</div> -->
 										</div><!-- /.widget-main -->
 
-										<div class="toolbar clearfix">
+										<!-- <div class="toolbar clearfix">
 											<div>
-												<a href="forgotPassword" data-target="#forgot-box" class="forgot-password-link">
+												<a href="#" data-target="#forgot-box" class="forgot-password-link">
 													<i class="ace-icon fa fa-arrow-left"></i>
 													I forgot my password
 												</a>
 											</div>
 
 											<div>
-												<a hre	f="userRegistration" data-target="#signup-box" class="user-signup-link">
+												<a href="#" data-target="#signup-box" class="user-signup-link">
 													I want to register
 													<i class="ace-icon fa fa-arrow-right"></i>
 												</a>
 											</div>
 										</div>
-									</div><!-- /.widget-body -->
-								</div><!-- /.login-box -->
+									</div>/.widget-body
+								</div>/.login-box
 
 								<div id="forgot-box" class="forgot-box widget-box no-border">
 									<div class="widget-body">
@@ -177,40 +205,37 @@
 											</h4>
 
 											<div class="space-6"></div>
-											<p id="forgotMsg" class="form-errors"></p>
 											<p>
 												Enter your email and to receive instructions
 											</p>
 
-
+											<form>
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input class="form-control" placeholder="Email" name="email" id="forgotEmail" />
+															<input type="email" class="form-control" placeholder="Email" />
 															<i class="ace-icon fa fa-envelope"></i>
-
 														</span>
 													</label>
 
 													<div class="clearfix">
-														<button type="submit" id="forgot" class="width-35 pull-right btn btn-sm btn-danger">
+														<button type="button" id="forgot" class="width-35 pull-right btn btn-sm btn-danger">
 															<i class="ace-icon fa fa-lightbulb-o"></i>
 															<span class="bigger-110">Send Me!</span>
 														</button>
-														
 													</div>
 												</fieldset>
-
-										</div><!-- /.widget-main -->
+											</form>
+										</div>/.widget-main
 
 										<div class="toolbar center">
-											<a href="#" data-target="#login-box" class="back-to-login-link" id="forgotBack">
+											<a href="#" data-target="#login-box" class="back-to-login-link">
 												Back to login
 												<i class="ace-icon fa fa-arrow-right"></i>
 											</a>
 										</div>
-									</div><!-- /.widget-body -->
-								</div><!-- /.forgot-box -->
+									</div>/.widget-body
+								</div>/.forgot-box
 
 								<div id="signup-box" class="signup-box widget-box no-border">
 									<div class="widget-body">
@@ -222,61 +247,42 @@
 
 											<div class="space-6"></div>
 											<p> Enter your details to begin: </p>
-											<p id="registerMsg"></p>
 
+											<form>
 												<fieldset>
-													
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="hidden" class="form-control" placeholder="logincount" value="0" name="logincount" id="logincount"/>
-															
-															
-														</span>
-													</label>
-													
-													<label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="hidden" class="form-control" placeholder="profilecount" value="0" name="profilecount" id="profilecount"/>
-															
-														</span>
-													</label>
-
-													<label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" name="userName" id="userName"/>
-															<i class="ace-icon fa fa-user"></i>
-															
-														</span>
-													</label>
-
-													<label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" name="password" id="password"/>
-															<i class="ace-icon fa fa-lock"></i>
-														
-														</span>
-													</label>
-
-													<label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Repeat password" name="cpassword" id="cpassword" />
-															<i class="ace-icon fa fa-retweet"></i>
-															
-														</span>
-													</label>
-													<label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control" placeholder="Email" name="email" id="email"/>
+															<input type="email" class="form-control" placeholder="Email" />
 															<i class="ace-icon fa fa-envelope"></i>
-															
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="Username" />
+															<i class="ace-icon fa fa-user"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="Password" />
+															<i class="ace-icon fa fa-lock"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="Repeat password" />
+															<i class="ace-icon fa fa-retweet"></i>
 														</span>
 													</label>
 													
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-<!-- 															<input type="password" class="form-control" placeholder="Repeat password" /> -->
-<!-- 															<i class="ace-icon fa fa-retweet"></i> -->
-																<select class="form-control" name="SQuestion" id="SQuestion">
+															<input type="password" class="form-control" placeholder="Repeat password" />
+															<i class="ace-icon fa fa-retweet"></i>
+																<select class="form-control" path="SQuestion">
 		    														<option value="-1">Select Question</option>
 		    														<option>What is your pets name ?</option>
 			  														<option>What was the name of your first school ?</option>
@@ -288,16 +294,14 @@
 			 														<option>What make was your first car or bike ?</option>
 			 														<option>Where did you first meet your spouse ?</option>
 		    													</select>
-		    													
 																
 														</span>
 													</label>
 													
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Answer" name="answer" id="answer"/>
-<!-- 															<i class="ace-icon fa fa-retweet"></i> -->
-																
+															<input type="text" class="form-control" placeholder="Answer" />
+															<i class="ace-icon fa fa-retweet"></i>
 														</span>
 													</label>
 
@@ -317,14 +321,14 @@
 															<span class="bigger-110">Reset</span>
 														</button>
 
-														<button type="submit" id="register" class="width-65 pull-right btn btn-sm btn-success">
+														<button type="button" id="register" class="width-65 pull-right btn btn-sm btn-success">
 															<span class="bigger-110">Register</span>
 
 															<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
 														</button>
 													</div>
 												</fieldset>
-
+											</form>
 										</div>
 
 										<div class="toolbar center">
@@ -332,7 +336,7 @@
 												<i class="ace-icon fa fa-arrow-left"></i>
 												Back to login
 											</a>
-										</div>
+										</div>-->
 									</div><!-- /.widget-body -->
 								</div><!-- /.signup-box -->
 							</div><!-- /.position-relative -->
@@ -415,19 +419,6 @@
 			}); */
 		</script>
 		
-		<!-- <script>
-			$(document).ready(function(){
-				$("#register").click(function(){
-					alert("register");
-				});
-				$("#forgot").click(function(){
-					alert("forgot");
-				});
-				$("#login").click(function(){
-					alert("login");
-				});
-			});
-		</script> -->
 	</body>
 	
 </html>

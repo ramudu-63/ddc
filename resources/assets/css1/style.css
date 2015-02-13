@@ -1,0 +1,48 @@
+
+.form-errors {
+	color : red !important;
+}
+
+.login-body {
+	background-color: #fff !important;
+}
+
+.msgbox {
+	margin-top: 100px !important;
+}
+
+.alert-over {
+	width: 80% !important;
+	font-size: 15px !important;
+	border-radius: 0 !important;
+	padding: 35px !important;
+}
+
+.search-align {
+	height: 50px !important;
+}
+
+.search1-align {
+	height: 40px !important;
+}
+
+.img-background {
+ background: #fff !important;
+ border-color : #DDDDDD !important;
+}
+
+.check-label {
+ font-size: 13px !important;
+}
+
+.search-align {
+ height: 50px !important;
+}
+
+.font-bold {
+	font-weight: bold !important;
+}
+
+.info-size {
+	font-size : 13px !important;
+}
