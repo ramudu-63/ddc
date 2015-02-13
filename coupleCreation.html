@@ -1,0 +1,2640 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Doubledating Connection</title>
+
+		<meta name="description" content="and Validation" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="resources/assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="resources/assets/css/font-awesome.css" />
+
+		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="resources/assets/css/select2.css" />
+		
+		<link rel="stylesheet" href="resources/assets/css1/style.css" />
+		
+		<link rel="stylesheet" href="resources/assets/css/jquery-ui.custom.css" />
+		<link rel="stylesheet" href="resources/assets/css/jquery.gritter.css" />
+		
+		<link rel="stylesheet" href="resources/assets/css/datepicker.css" />
+		<link rel="stylesheet" href="resources/assets/css/bootstrap-editable.css" />
+		
+		<link rel="stylesheet" href="resources/assets/css/ddc.onpage-help.css" />
+		<link rel="stylesheet" href="resources/assets/docs/assets/js/themes/sunburst.css" />
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="resources/assets/css/ddc-fonts.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="resources/assets/css/ddc.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="resources/assets/js/ace-extra.js"></script>
+		<script src="resources/assets/js1/login.js"></script>
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				
+
+				<!-- /section:basics/sidebar.mobile.toggle -->
+				<div class="navbar-header pull-left">
+					<!-- #section:basics/navbar.layout.brand -->
+					<a href="#" class="navbar-brand">
+						<small>
+<!-- 							<i class="fa fa-leaf"></i> -->
+							doubledating connections
+						</small>
+					</a>
+
+					<!-- /section:basics/navbar.layout.brand -->
+
+					<!-- #section:basics/navbar.toggle -->
+
+					<!-- /section:basics/navbar.toggle -->
+				</div>
+
+				<!-- #section:basics/navbar.dropdown -->
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						
+
+						
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>Message
+<!-- 								<span class="badge badge-success">5</span> -->
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									5 Messages
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Alex:</span>
+														Ciao sociis natoque penatibus et auctor ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>a moment ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Susan:</span>
+														Vestibulum id ligula porta felis euismod ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>20 minutes ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Bob:</span>
+														Nullam quis risus eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>3:15 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kate:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Fred:</span>
+														Vestibulum id penatibus et auctor  ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>10:09 am</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										See all messages
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- #section:basics/navbar.user_menu -->
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="viewprofile.html">
+										<i class="ace-icon fa fa-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="index.html">
+										<i class="ace-icon fa fa-power-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- /section:basics/navbar.user_menu -->
+					</ul>
+				</div>
+
+				<!-- /section:basics/navbar.dropdown -->
+			</div><!-- /.navbar-container -->
+		</div>
+		
+		
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			
+			
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+					
+
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content">
+						
+						<div class="row">
+							<div class="col-xs-1"></div>
+							<div class="col-xs-10">
+								
+									<div class="space-8"></div>
+<!-- 								<div class="hr hr-18 hr-double dotted"></div> -->
+									<div class="space-8"></div>
+							<form action="coupleCreation" method="post" class="form-horizontal ">
+								<div class="widget-box">
+									<div class="widget-header widget-header-blue widget-header-flat">
+										<h4 class="widget-title lighter">Create a couple profile</h4>
+
+										
+									</div>
+
+									<div class="widget-body">
+										<div class="widget-main">
+											<!-- #section:plugins/fuelux.wizard -->
+											<div id="fuelux-wizard-container">
+												<div>
+													<!-- #section:plugins/fuelux.wizard.steps -->
+													<ul class="steps">
+														<li data-step="1" class="active">
+															<span class="step">1</span>
+															<span class="title">My Profile</span>
+														</li>
+
+														<li data-step="2">
+															<span class="step">2</span>
+															<span class="title">My Partner's Profile</span>
+														</li>
+
+														<li data-step="3">
+															<span class="step">3</span>
+															<span class="title">About Us</span>
+														</li>
+
+														<li data-step="4">
+															<span class="step">4</span>
+															<span class="title">Our Interests</span>
+														</li>
+														
+														<li data-step="5">
+															<span class="step">5</span>
+															<span class="title">Things Like to Do</span>
+														</li>
+														
+														<li data-step="6">
+															<span class="step">6</span>
+															<span class="title">Combined Preferences</span>
+														</li>
+														
+														
+														
+													</ul>
+
+													<!-- /section:plugins/fuelux.wizard.steps -->
+												</div>
+
+												<hr />
+												<div class="hide col-md-2">
+															<div id="user-profile-1" class="user-profile row">
+																<div class="col-xs-12 col-sm-3 center">
+																	<div>
+																		<!-- #section:pages/profile.picture -->
+																		<span class="profile-picture">
+																			<img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="assets/avatars/profile-pic.jpg" />
+																		</span>
+						
+																		<!-- /section:pages/profile.picture -->
+																												
+																	</div>
+						
+																				
+																</div>
+						
+															</div>
+												</div>
+												
+												<!-- #section:plugins/fuelux.wizard.container -->
+												<div class="step-content pos-rel">
+													<div class="step-pane active" data-step="1">
+														<h3 class="lighter block green">My Profile</h3>
+														
+														<div class="space-8"></div>
+														
+														<div class="col-md-1 col-sm-1"></div>
+														
+														<div class="hide col-md-2">
+															<div id="user-profile-1" class="user-profile row">
+																<div class="col-xs-12 col-sm-3 center">
+																	<div>
+																		<!-- #section:pages/profile.picture -->
+																		<span class="profile-picture">
+																			<img  class="editable img-responsive" alt="Alex's Avatar" src="assets/avatars/profile-pic.jpg" />
+																		</span>
+						
+																		<!-- /section:pages/profile.picture -->
+																												
+																	</div>
+						
+																				
+																</div>
+						
+															</div>
+														</div>
+														
+														<div class="col-sm-1"></div>
+														<div class="col-sm-10 col-md-10">
+<!-- 														<form class="form-horizontal " id="validation-form" method="get"> -->
+														
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 col-md-3 no-padding-right info-size" for="firstname">Firstname</label>
+
+																<div class="col-xs-12 col-sm-9 col-md-9">
+																	<div class="clearfix">
+																		<input type="text" name="firstName" id="fname" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password">Lastname</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="lastName" id="lname" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="email">Gender</label>
+
+																<div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+																	<label class="radio-inline info-size">
+																	  <input type="radio" name="userGender" value="Male" id="gender">Male
+																	</label>
+																	<label class="radio-inline info-size">
+																	  <input type="radio" name="usergender" value="Female" id="gender">Female
+																	  
+																	</label>
+																</div>
+															</div>
+
+															<div class="space-2"></div>
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password2">Date of Birth</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="dob" id="dob" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+															
+															
+															
+
+															<div class="space-8"></div>
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password2">Highschool</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="highSchool" id="highSchool" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+
+															
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="name">College</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="college" id="college" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="space-2"></div>
+
+															
+
+															
+															
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Education</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select name="education" id="educationObtained" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" >
+																		<option value="">&nbsp;</option>
+																		<option>High school graduate</option>
+																		  <option>Some college</option>
+																		  <option>College student</option>
+																		  <option>AA(2 years college)</option>
+																		  <option>BA/ BS (4 years college)</option>
+																		  <option>Some grad school</option>
+																		  <option>Grad school student</option>
+																		  <option>MA/ MS/ MBA</option>
+																		  <option>MCA</option>
+																		  <option>PhD/ Post doctorate</option>
+																		  <option>JD</option>
+																		  <option>_sm</option>
+																	</select>
+																</div>
+															</div>
+														
+
+<!-- 														</form> -->
+														</div>
+
+													</div>
+
+													<div class="step-pane " data-step="2">
+														<h3 class="lighter block green">My Partner's Profile</h3>
+														
+														<div class="col-md-1 col-sm-1"></div>
+														
+														<div class="hide col-md-2">
+															<div id="user-profile-1" class="user-profile row">
+																<div class="col-xs-12 col-sm-3 center">
+																	<div>
+																		<!-- #section:pages/profile.picture -->
+																		<span class="profile-picture">
+																			<img  class="editable img-responsive" alt="Alex's Avatar" src="assets/avatars/profile-pic.jpg" />
+																		</span>
+						
+																		<!-- /section:pages/profile.picture -->
+																												
+																	</div>
+						
+																				
+																</div>
+						
+															</div>
+														</div>
+														
+														<div class="col-sm-1"></div>
+														<div class="col-sm-10 col-md-10">
+<!-- 														<form class="form-horizontal " id="validation-form" method="get"> -->
+														
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 col-md-3 no-padding-right info-size" for="password">Firstname</label>
+
+																<div class="col-xs-12 col-sm-9 col-md-9">
+																	<div class="clearfix">
+																		<input type="text" name="partnerFirstname" id="partnerfname" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password">Lastname</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="partnerLastname" id="partnerlname"  class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="email">Gender</label>
+
+																<div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+																	<label class="radio-inline info-size">
+																	  <input type="radio" name="partnergender" id="partnergender" value="Male">Male
+																	</label>
+																	<label class="radio-inline info-size">
+																	  <input type="radio" name="partnergender" id="partnergender" value="Female">Female
+																	</label>
+																</div>
+															</div>
+
+															<div class="space-2"></div>
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password2">Date of Birth</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="partnerdob" id="partnerdob" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="space-8"></div>
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password2">Highschool</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="partnerSchool" id="partnerhighSchool" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+
+															
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="name">College</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="partnerCollege" id="partnercollege" class="col-xs-12 col-sm-8 col-md-7 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="space-2"></div>
+
+															
+
+															
+															
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Education</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select name="partnerEducation" id="partnereducationObtained" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" >
+																		<option value="">&nbsp;</option>
+																		<option>High school graduate</option>
+																		  <option>Some college</option>
+																		  <option>College student</option>
+																		  <option>AA(2 years college)</option>
+																		  <option>BA/ BS (4 years college)</option>
+																		  <option>Some grad school</option>
+																		  <option>Grad school student</option>
+																		  <option>MA/ MS/ MBA</option>
+																		  <option>MCA</option>
+																		  <option>PhD/ Post doctorate</option>
+																		  <option>JD</option>
+																		  <option>_sm</option>
+																	</select>
+																</div>
+															</div>
+														
+
+<!-- 														</form> -->
+														</div>
+													</div>
+
+													<div class="step-pane" data-step="3">
+															<h3 class="lighter block green">About Us</h3>
+															<div class="space-20"></div>
+														<div class="col-md-4 col-sm-4" id="user-profile-3">
+															
+															
+																	<input type="file" />
+																
+														
+														</div>
+														
+														<div class="col-md-8 col-sm-8">
+<!-- 														<form class="form-horizontal " id="validation-form" method="get"> -->
+															
+															<div class="form-group">
+                												<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Relationship Status</label>
+
+												                <div class="col-xs-12 col-sm-9">
+                 													<select  name="rstatus" id="relationshipStatus" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" >
+                    													<option value="">Select</option>
+                    													<option>Married</option>
+                    													<option>Engaged</option>
+                    													<option>Living together</option>
+                    													<option>Dating</option>
+                    
+                 													</select>
+                												</div>
+               												</div>
+															
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Children</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select name="children" id="numberOfChildern" class="col-xs-12 col-sm-7 col-md-2 info-size" >
+																		
+																		  <option>0</option>
+																		  <option>1</option>
+																		  <option>2</option>
+																		  <option>3</option>
+																		  <option>4</option>
+																		  <option>5</option>
+																		  <option>6</option>
+																		  <option>7</option>
+																		  <option>8</option>
+																	</select>
+																	
+																	<div class="col-sm-6 col-xs-2 col-md-1"></div>
+																	<select name="status" id="childrenStatus" class="col-xs-12 col-sm-7 col-md-3 info-size" >
+																		  <option value="">Select</option>
+																		  <option>living with us</option>
+																		  <option>not living with us</option>
+																		  <option>sometimes living with us</option>
+																		  <option>i will tell u later</option>
+																		  
+																	</select>
+																</div>
+															</div>
+
+															<!-- <div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password">City</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="city" class="col-xs-12 col-sm-7 col-md-6" />
+																	</div>
+																</div>
+															</div> -->
+															
+<!-- 															<div class="form-group"> -->
+<!-- 																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password">State</label> -->
+
+<!-- 																<div class="col-xs-12 col-sm-9"> -->
+<!-- 																	<div class="clearfix"> -->
+<!-- 																		<input type="text" name="state" id="password" class="col-xs-12 col-sm-7 col-md-6" /> -->
+<!-- 																	</div> -->
+<!-- 																</div> -->
+<!-- 															</div> -->
+															
+															<!-- <div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Country</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select name="country" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" >
+																		  <option value="">Select</option>
+																		  <option>USA</option>
+																		  <option>Canada</option>
+																		  <option>United Kingdom</option>
+																		  <option>Australia</option>
+																		  <option>New Zealand</option>
+																	</select>
+																</div>
+															</div> -->
+
+															<div class="space-2"></div>
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password2">Your Anniversary</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="anniversary" id="anniversary" class="col-xs-12 col-sm-7 col-md-6 col-lg-6" />
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Ethnicity</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select id="preferedEthinicity" name="ethinicity" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" data-placeholder="Click to Choose...">
+																		  <option value="">I prefer not to say</option>
+																		  <option>African</option>
+																		  <option>African American</option>
+																		  <option>Asian</option>
+																		  <option>Caucasian</option>
+																		  <option>East Indian</option>
+																		  <option>Hispanic</option>
+																		  <option>Indian</option>
+																		  <option>Latino</option>
+																		  <option>Mediterranean</option>
+																		  <option>Middle Eastern</option>
+																		  <option>Native American</option>
+																		  <option>Mixed</option>
+																	</select>
+																</div>
+															</div>
+
+
+<!-- 														</form> -->
+														</div>
+													</div>
+
+													<div class="step-pane" data-step="4">
+														<h3 class="lighter block green">Our Interests</h3>
+														
+															
+															
+															
+															<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+																<div class="checkbox">
+																	<label class="block">
+																		<input name="checkbox" type="checkbox" class="ace" value="Hobbies and crafts" id="interests"/>
+																		<span class="lbl  check-label"> Hobbies and crafts</span>
+																	</label>
+																</div>
+																	<!-- /section:custom/checkbox -->
+															</div>
+															
+															<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="checkbox" type="checkbox" class="ace" value="Bowling" id="interests"/>
+																			<span class="lbl  check-label"> Bowling</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+															</div>
+															
+															<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="checkbox" type="checkbox" class="ace" value="Movies/Videos" id="interests"/>
+																			<span class="lbl  check-label"> Movies/Videos</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="checkbox" type="checkbox" class="ace " value="Playing sports"/>
+																			<span class="lbl  check-label"> Playing sports</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Political interests" />
+																			<span class="lbl  check-label"> Political interests</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Gardening/Landscaping" />
+																			<span class="lbl  check-label"> Gardening/Landscaping</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Playing cards" />
+																			<span class="lbl  check-label"> Playing cards</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Book club"/>
+																			<span class="lbl  check-label"> Book club</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Fishing/Hunting" />
+																			<span class="lbl  check-label"> Fishing/Hunting</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+															
+															
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Religion/Spiritual" />
+																			<span class="lbl  check-label"> Religion/Spiritual</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Camping" />
+																			<span class="lbl  check-label"> Camping</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Museums and art"/>
+																			<span class="lbl  check-label"> Museums and art</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Shopping/Antiques"/>
+																			<span class="lbl  check-label"> Shopping/Antiques</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Music and concerts"/>
+																			<span class="lbl  check-label"> Music and concerts</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Travel"/>
+																			<span class="lbl  check-label"> Travel</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Business networking" />
+																			<span class="lbl  check-label"> Business networking</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Exploring new areas" />
+																			<span class="lbl  check-label"> Exploring new areas</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+															
+															
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Video games" />
+																			<span class="lbl  check-label"> Video games</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Cooking" />
+																			<span class="lbl  check-label"> Cooking</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Nightclubs/Dancing" />
+																			<span class="lbl  check-label"> Nightclubs/Dancing</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Watching sports"/>
+																			<span class="lbl  check-label"> Watching sports</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Weekend getaways"/>
+																			<span class="lbl  check-label"> Weekend getaways</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Performing arts" />
+																			<span class="lbl  check-label"> Performing arts</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Wine tasting"/>
+																			<span class="lbl  check-label"> Wine tasting</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Alumni connections"/>
+																			<span class="lbl  check-label"> Alumni connections</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+															
+															
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Skiing"/>
+																			<span class="lbl  check-label"> Skiing</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Golf"/>
+																			<span class="lbl  check-label"> Golf</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Water sports"/>
+																			<span class="lbl  check-label"> Water sports</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Boating/Sailing" />
+																			<span class="lbl  check-label"> Boating/Sailing</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Bike riding"/>
+																			<span class="lbl  check-label"> Bike riding</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Motor cycles"/>
+																			<span class="lbl  check-label"> Motor cycles</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Beach volleyball" />
+																			<span class="lbl  check-label"> Beach volleyball</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace" value="Any"/>
+																			<span class="lbl  check-label"> Any</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+														
+													</div>
+													
+													<div class="step-pane" data-step="5">
+														<h3 class="lighter block green">Things Like to Do</h3>
+																													
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Hobbies and crafts"  id="thingsliketodos"/>
+																			<span class="lbl  check-label"> Hobbies and crafts</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+															</div>
+															
+															<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Movies/Videos" id="thingsliketodos"/>
+																			<span class="lbl  check-label"> Movies/Videos</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Playing sports"/>
+																			<span class="lbl  check-label"> Playing sports</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Political interests"/>
+																			<span class="lbl  check-label"> Political interests</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Gardening/Landscaping" />
+																			<span class="lbl  check-label"> Gardening/Landscaping</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Playing cards" />
+																			<span class="lbl  check-label"> Playing cards</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Book club" />
+																			<span class="lbl  check-label"> Book club</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Fishing/Hunting" />
+																			<span class="lbl  check-label"> Fishing/Hunting</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+															
+															
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Religion/Spiritual" />
+																			<span class="lbl  check-label"> Religion/Spiritual</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Camping" />
+																			<span class="lbl  check-label"> Camping</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Museums and art" />
+																			<span class="lbl  check-label"> Museums and art</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Shopping/Antiques" />
+																			<span class="lbl  check-label"> Shopping/Antiques</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Music and concerts" />
+																			<span class="lbl  check-label"> Music and concerts</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Travel" />
+																			<span class="lbl  check-label"> Travel</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Business networking" />
+																			<span class="lbl  check-label"> Business networking</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Exploring new areas" />
+																			<span class="lbl  check-label"> Exploring new areas</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+															
+															
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Video games" />
+																			<span class="lbl  check-label"> Video games</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Cooking" />
+																			<span class="lbl  check-label"> Cooking</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Nightclubs/Dancing" />
+																			<span class="lbl  check-label"> Nightclubs/Dancing</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Watching sports" />
+																			<span class="lbl  check-label"> Watching sports</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Weekend getaways" />
+																			<span class="lbl  check-label"> Weekend getaways</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Performing arts" />
+																			<span class="lbl  check-label"> Performing arts</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Wine tasting" />
+																			<span class="lbl  check-label"> Wine tasting</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Alumni connections" />
+																			<span class="lbl  check-label"> Alumni connections</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+															
+															
+															
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Skiing" />
+																			<span class="lbl  check-label"> Skiing</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Golf" />
+																			<span class="lbl  check-label"> Golf</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Water sports" />
+																			<span class="lbl  check-label"> Water sports</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Boating/Sailing" />
+																			<span class="lbl  check-label"> Boating/Sailing</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Bike riding" />
+																			<span class="lbl  check-label"> Bike riding</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Motor cycles" />
+																			<span class="lbl  check-label"> Motor cycles</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Beach volleyball" />
+																			<span class="lbl  check-label"> Beach volleyball</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																<div class="control-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+																	<div class="checkbox">
+																		<label class="block">
+																			<input name="form-field-checkbox" type="checkbox" class="ace things" value="Any" />
+																			<span class="lbl  check-label"> Any</span>
+																		</label>
+																	</div>
+
+																	<!-- /section:custom/checkbox -->
+																</div>
+																
+													</div>
+													
+													<div class="step-pane" data-step="6">
+														<h3 class="lighter block green">Combined Preferences</h3>
+														<div class="col-md-2 col-sm-2"></div>
+														<div class="col-md-10 col-sm-10">
+<!-- 														<form class="form-horizontal " id="validation-form" method="get"> -->
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Age</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select id="preferedFromAge" name="state" class="col-xs-12 col-sm-7 col-md-2 info-size" data-placeholder="Click to Choose...">
+																		
+																		  <option>18</option>
+																		  <option>19</option>
+																		  <option>20</option>
+																		  <option>21</option>
+																		  <option>22</option>
+																		  <option>23</option>
+																		  <option>24</option>
+																		  <option>25</option>
+																		  <option>26</option>
+																		  <option>27</option>
+																		  <option>28</option>
+																		  <option>29</option>
+																		  <option>30</option>
+																		  <option>31</option>
+																		  <option>32</option>
+																		  <option>33</option>
+																		  <option>34</option>
+																		  <option>35</option>
+																		  <option>36</option>
+																		  <option>37</option>
+																		  <option>38</option>
+																		  <option>39</option>
+																		  <option>40</option>
+																		  <option>41</option>
+																		  <option>42</option>
+																		  <option>43</option>
+																		  <option>44</option>
+																		  <option>45</option>
+																		  <option>46</option>
+																		  <option>47</option>
+																		  <option>48</option>
+																		  <option>49</option>
+																		  <option>50</option>
+																		  <option>51</option>
+																		  <option>52</option>
+																		  <option>53</option>
+																		  <option>54</option>
+																		  <option>55</option>
+																		  <option>56</option>
+																		  <option>57</option>
+																		  <option>58</option>
+																		  <option>59</option>
+																		  <option>60</option>
+																		  <option>61</option>
+																		  <option>62</option>
+																		  <option>63</option>
+																		  <option>64</option>
+																		  <option>65</option>
+																		  <option>66</option>
+																		  <option>67</option>
+																		  <option>68</option>
+																		  <option>69</option>
+																		  <option>70</option>
+
+																	</select>
+																	
+																	<div class="col-sm-6 col-xs-2 col-md-1"></div>
+																	<select id="preferedToAge" name="state" class="col-xs-12 col-sm-7 col-md-3 info-size" data-placeholder="Click to Choose...">
+																		
+																		  <option>18</option>
+																		  <option>19</option>
+																		  <option>20</option>
+																		  <option>21</option>
+																		  <option>22</option>
+																		  <option>23</option>
+																		  <option>24</option>
+																		  <option>25</option>
+																		  <option>26</option>
+																		  <option>27</option>
+																		  <option>28</option>
+																		  <option>29</option>
+																		  <option>30</option>
+																		  <option>31</option>
+																		  <option>32</option>
+																		  <option>33</option>
+																		  <option>34</option>
+																		  <option>35</option>
+																		  <option>36</option>
+																		  <option>37</option>
+																		  <option>38</option>
+																		  <option>39</option>
+																		  <option>40</option>
+																		  <option>41</option>
+																		  <option>42</option>
+																		  <option>43</option>
+																		  <option>44</option>
+																		  <option>45</option>
+																		  <option>46</option>
+																		  <option>47</option>
+																		  <option>48</option>
+																		  <option>49</option>
+																		  <option>50</option>
+																		  <option>51</option>
+																		  <option>52</option>
+																		  <option>53</option>
+																		  <option>54</option>
+																		  <option>55</option>
+																		  <option>56</option>
+																		  <option>57</option>
+																		  <option>58</option>
+																		  <option>59</option>
+																		  <option>60</option>
+																		  <option>61</option>
+																		  <option>62</option>
+																		  <option>63</option>
+																		  <option>64</option>
+																		  <option>65</option>
+																		  <option>66</option>
+																		  <option>67</option>
+																		  <option>68</option>
+																		  <option>69</option>
+																		  <option>70</option>
+
+																		  
+																	</select>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Ethnicity</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select id="preferedEthinicity" name="preferedEthinicity" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" data-placeholder="Click to Choose...">
+																		  <option value="">I prefer not to say</option>
+																		  <option>African</option>
+																		  <option>African American</option>
+																		  <option>Asian</option>
+																		  <option>Caucasian</option>
+																		  <option>East Indian</option>
+																		  <option>Hispanic</option>
+																		  <option>Indian</option>
+																		  <option>Latino</option>
+																		  <option>Mediterranean</option>
+																		  <option>Middle Eastern</option>
+																		  <option>Native American</option>
+																		  <option>Mixed</option>
+																	</select>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Religion</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select id="preferedReligion" name="preferedReligion" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" data-placeholder="Click to Choose...">
+																		  <option value="">I prefer not to say</option>
+																		  <option>Adventist</option>
+																		  <option>Agnostic</option>
+																		  <option>Atheist</option>
+																		  <option>Baptist</option>
+																		  <option>Buddhist</option>
+																		  <option>Caodaism</option>
+																		  <option>Catholic</option>
+																		  <option>Christian</option>
+																		  <option>Hindu</option>
+																		  <option>Iskcon</option>
+																		  <option>Jainism</option>
+																		  <option>Jewish</option>
+																		  <option>Methodist</option>
+																		  <option>Mormon</option>
+																		  <option>Moslem</option>
+																		  <option>Orthodox</option>
+																		  <option>Pentecostel</option>
+																		  <option>Protestant</option>
+																		  <option>Quaker</option>
+																		  <option>Scientology</option>
+																		  <option>Shinto</option>
+																		  <option>Sikhism</option>
+																		  <option>Spiritual</option>
+																		  <option>Taoism</option>
+																		  <option>Wiccan</option>
+																		  <option>Other</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password">City</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="city" id="pcity" class="col-xs-12 col-sm-7 col-md-6" />
+																	</div>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="password">State</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" name="state" id="state" class="col-xs-12 col-sm-7 col-md-6" />
+																	</div>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right info-size" for="state">Country</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<select id="pcountry" name="country" class="col-xs-12 col-sm-8 col-md-7 col-lg-6 info-size" data-placeholder="Click to Choose...">
+																		  <option value="">Select</option>
+																		  <option value="USA">USA</option>
+																		  <option value="Canada">Canada</option>
+																		  <option value="United Kingdom">United Kingdom</option>
+																		  <option value="Australia">Australia</option>
+																		  <option value="New Zealand">New Zealand</option>
+																	</select>
+																</div>
+															</div>
+																<div class="wizard-actions">
+																	<button class="btn btn-prev" type="button">Button</button>
+																</div>														
+<!-- 														</form> -->
+														</div>
+													</div>
+													
+													
+												</div>
+
+												<!-- /section:plugins/fuelux.wizard.container -->
+											</div>
+
+											<hr />
+											<div class="wizard-actions">
+												<!-- #section:plugins/fuelux.wizard.buttons -->
+												<button class="btn btn-prev" type="button">
+													<i class="ace-icon fa fa-arrow-left"></i>
+													Prev
+												</button>
+
+												<button class="btn btn-success btn-next" data-last="Finish" type="button" id="getValues">
+													Next
+													<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+												</button>
+												<!-- <button class="btn btn-success btn-next" data-last="Finish" type="submit" id="getValues">
+													Next
+													<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+												</button> -->
+												
+
+												<!-- /section:plugins/fuelux.wizard.buttons -->
+											</div>
+
+											<!-- /section:plugins/fuelux.wizard -->
+										</div><!-- /.widget-main -->
+									</div><!-- /.widget-body -->
+								</div>
+<!-- 							</form> -->
+								<div id="modal-wizard" class="modal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div id="modal-wizard-container">
+												<div class="modal-header">
+													<ul class="steps">
+														<li data-step="1" class="active">
+															<span class="step">1</span>
+															<span class="title">My Profile</span>
+														</li>
+
+														<li data-step="2">
+															<span class="step">2</span>
+															<span class="title">My Partner's Profile</span>
+														</li>
+
+														<li data-step="3">
+															<span class="step">3</span>
+															<span class="title">About Us</span>
+														</li>
+
+														<li data-step="4">
+															<span class="step">4</span>
+															<span class="title">Our Interests</span>
+														</li>
+														
+														<li data-step="5">
+															<span class="step">5</span>
+															<span class="title">Couples Interests</span>
+														</li>
+														
+														<li data-step="6">
+															<span class="step">6</span>
+															<span class="title">Combined Preferences</span>
+														</li>
+														
+														
+														
+													</ul>
+												</div>
+
+												<div class="modal-body step-content">
+													<div class="step-pane active" data-step="1">
+														<div class="center">
+															<h4 class="blue">Step 1</h4>
+														</div>
+													</div>
+
+													<div class="step-pane" data-step="2">
+														<div class="center">
+															<h4 class="blue">Step 2</h4>
+														</div>
+													</div>
+
+													<div class="step-pane" data-step="3">
+														<div class="center">
+															<h4 class="blue">Step 3</h4>
+														</div>
+													</div>
+
+													<div class="step-pane" data-step="4">
+														<div class="center">
+															<h4 class="blue">Step 4</h4>
+														</div>
+													</div>
+													
+													<div class="step-pane" data-step="5">
+														<div class="center">
+															<h4 class="blue">Step 5</h4>
+														</div>
+													</div>
+													
+													<div class="step-pane" data-step="6">
+														<div class="center">
+															<h4 class="blue">Step 6</h4>
+														</div>
+													</div>
+													
+													
+												</div>
+											</div>
+
+											<div class="modal-footer wizard-actions">
+												<button class="btn btn-sm btn-prev">
+													<i class="ace-icon fa fa-arrow-left"></i>
+													Prev
+												</button>
+
+												<button class="btn btn-success btn-sm btn-next" data-last="Finish">
+													Next
+													<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+												</button>
+
+												<button class="btn btn-danger btn-sm pull-left" data-dismiss="modal">
+													<i class="ace-icon fa fa-times"></i>
+													Cancel
+												</button>
+											</div>
+										</div>
+									</div>
+								</div><!-- PAGE CONTENT ENDS -->
+							 </form>
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+
+												<!-- <div class="col-xs-12">
+												<h3>
+													<i class="ace-icon fa fa-spinner fa-spin orange bigger-225"></i>
+													</h3>
+													
+												
+											</div>
+													 -->
+			
+		</div><!-- /.main-container -->
+
+		<!-- /section:basics/navbar.layout -->
+		
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='resources/assets/js/jquery.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery1x.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		
+		<script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#userdob').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose : true
+                });  
+            
+            });
+        </script>
+        
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#partnerdob').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose : true
+                });  
+            
+            });
+        </script>
+         <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#dob').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose : true
+                });  
+            
+            });
+        </script>
+        
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#anniversary').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose : true
+                });  
+            
+            });
+        </script>
+		
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='resources/assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
+		</script>
+		<script src="resources/assets/js/bootstrap.js"></script>
+		
+		<script src="resources/assets/js/spin.js"></script>
+		<script src="resources/assets/js/jquery-ui.custom.js"></script>
+		<script src="resources/assets/js/jquery.ui.touch-punch.js"></script>
+		<script src="resources/assets/js/jquery.gritter.js"></script>
+		<script src="resources/assets/js/bootbox.js"></script>
+		<script src="resources/assets/js/jquery.easypiechart.js"></script>
+		<script src="resources/assets/js/date-time/bootstrap-datepicker.js"></script>
+		<script src="resources/assets/js/jquery.hotkeys.js"></script>
+		<script src="resources/assets/js/bootstrap-wysiwyg.js"></script>
+		
+		<script src="resources/assets/js/fuelux/fuelux.spinner.js"></script>
+		<script src="resources/assets/js/x-editable/bootstrap-editable.js"></script>
+		<script src="resources/assets/js/x-editable/ace-editable.js"></script>
+		
+		
+		
+
+		<!-- page specific plugin scripts -->
+		<script src="resources/assets/js/fuelux/fuelux.wizard.js"></script>
+		<script src="resources/assets/js/jquery.validate.js"></script>
+		<script src="resources/assets/js/additional-methods.js"></script>
+		<script src="resources/assets/js/bootbox.js"></script>
+		<script src="resources/assets/js/jquery.maskedinput.js"></script>
+		<script src="resources/assets/js/select2.js"></script>
+
+		<!-- ace scripts -->
+		<script src="resources/assets/js/ace/elements.scroller.js"></script>
+		<script src="resources/assets/js/ace/elements.colorpicker.js"></script>
+		<script src="resources/assets/js/ace/elements.fileinput.js"></script>
+		<script src="resources/assets/js/ace/elements.typeahead.js"></script>
+		<script src="resources/assets/js/ace/elements.wysiwyg.js"></script>
+		<script src="resources/assets/js/ace/elements.spinner.js"></script>
+		<script src="resources/assets/js/ace/elements.treeview.js"></script>
+		<script src="resources/assets/js/ace/elements.wizard.js"></script>
+		<script src="resources/assets/js/ace/elements.aside.js"></script>
+		<script src="resources/assets/js/ace/ace.js"></script>
+		<script src="resources/assets/js/ace/ace.ajax-content.js"></script>
+		<script src="resources/assets/js/ace/ace.touch-drag.js"></script>
+		<script src="resources/assets/js/ace/ace.sidebar.js"></script>
+		<script src="resources/assets/js/ace/ace.sidebar-scroll-1.js"></script>
+		<script src="resources/assets/js/ace/ace.submenu-hover.js"></script>
+		<script src="resources/assets/js/ace/ace.widget-box.js"></script>
+		<script src="resources/assets/js/ace/ace.settings.js"></script>
+		<script src="resources/assets/js/ace/ace.settings-rtl.js"></script>
+		<script src="resources/assets/js/ace/ace.settings-skin.js"></script>
+		<script src="resources/assets/js/ace/ace.widget-on-reload.js"></script>
+		<script src="resources/assets/js/ace/ace.searchbox-autocomplete.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+			
+				$('[data-rel=tooltip]').tooltip();
+			
+				$(".select2").css('width','200px').select2({allowClear:true})
+				.on('change', function(){
+					$(this).closest('form').validate().element($(this));
+				}); 
+			
+			
+				var $validation = false;
+				$('#fuelux-wizard-container')
+				.ace_wizard({
+					//step: 2 //optional argument. wizard will jump to step "2" at first
+					//buttons: '.wizard-actions:eq(0)'
+				})
+				.on('actionclicked.fu.wizard' , function(e, info){
+					if(info.step == 1 && $validation) {
+						if(!$('#validation-form').valid()) e.preventDefault();
+					}
+				})
+				.on('finished.fu.wizard', function(e) {
+
+					//valFunction();	
+					window.location.replace("wizardInfo.html");		
+// 					bootbox.dialog({
+// 						message: "Thank you! Your information was successfully saved!", 
+// 						buttons: {
+// 							"success" : {
+// 								"label" : "OK",
+// 								"className" : "btn-sm btn-primary"
+// 							}
+// 						}
+// 					});
+				}).on('stepclick.fu.wizard', function(e){
+					//e.preventDefault();//this will prevent clicking and selecting steps
+				});
+			
+			
+				//jump to a step
+				/**
+				var wizard = $('#fuelux-wizard-container').data('fu.wizard')
+				wizard.currentStep = 3;
+				wizard.setState();
+				*/
+			
+				//determine selected step
+				//wizard.selectedItem().step
+			
+			
+			
+				//hide or show the other form which requires validation
+				//this is for demo only, you usullay want just one form in your application
+				$('#skip-validation').removeAttr('checked').on('click', function(){
+					$validation = this.checked;
+					if(this.checked) {
+						$('#sample-form').hide();
+						$('#validation-form').removeClass('hide');
+					}
+					else {
+						$('#validation-form').addClass('hide');
+						$('#sample-form').show();
+					}
+				})
+			
+			
+			
+				//documentation : http://docs.jquery.com/Plugins/Validation/validate
+			
+			
+				$.mask.definitions['~']='[+-]';
+				$('#phone').mask('(999) 999-9999');
+			
+				jQuery.validator.addMethod("phone", function (value, element) {
+					return this.optional(element) || /^\(\d{3}\) \d{3}\-\d{4}( x\d{1,6})?$/.test(value);
+				}, "Enter a valid phone number.");
+			
+				$('#validation-form').validate({
+					errorElement: 'div',
+					errorClass: 'help-block',
+					focusInvalid: false,
+					ignore: "",
+					rules: {
+						email: {
+							required: true,
+							email:true
+						},
+						password: {
+							required: true,
+							minlength: 5
+						},
+						password2: {
+							required: true,
+							minlength: 5,
+							equalTo: "#password"
+						},
+						name: {
+							required: true
+						},
+						phone: {
+							required: true,
+							phone: 'required'
+						},
+						url: {
+							required: true,
+							url: true
+						},
+						comment: {
+							required: true
+						},
+						state: {
+							required: true
+						},
+						platform: {
+							required: true
+						},
+						subscription: {
+							required: true
+						},
+						gender: {
+							required: true,
+						},
+						agree: {
+							required: true,
+						}
+					},
+			
+					messages: {
+						email: {
+							required: "Please provide a valid email.",
+							email: "Please provide a valid email."
+						},
+						password: {
+							required: "Please specify a password.",
+							minlength: "Please specify a secure password."
+						},
+						state: "Please choose state",
+						subscription: "Please choose at least one option",
+						gender: "Please choose gender",
+						agree: "Please accept our policy"
+					},
+			
+			
+					highlight: function (e) {
+						$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+					},
+			
+					success: function (e) {
+						$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+						$(e).remove();
+					},
+			
+					errorPlacement: function (error, element) {
+						if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+							var controls = element.closest('div[class*="col-"]');
+							if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+							else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+						}
+						else if(element.is('.select2')) {
+							error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+						}
+						else if(element.is('.chosen-select')) {
+							error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+						}
+						else error.insertAfter(element.parent());
+					},
+			
+					submitHandler: function (form) {
+					},
+					invalidHandler: function (form) {
+					}
+				});
+			
+				
+				
+				
+				$('#modal-wizard-container').ace_wizard();
+				$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]').removeAttr('disabled');
+				
+				
+				/**
+				$('#date').datepicker({autoclose:true}).on('changeDate', function(ev) {
+					$(this).closest('form').validate().element($(this));
+				});
+				
+				$('#mychosen').chosen().on('change', function(ev) {
+					$(this).closest('form').validate().element($(this));
+				});
+				*/
+				
+				
+				$(document).one('ajaxloadstart.page', function(e) {
+					//in ajax mode, remove remaining elements before leaving page
+					$('[class*=select2]').remove();
+				});
+			})
+		</script>
+		
+		 <script type="text/javascript">
+		 jQuery(function($) {
+			
+			 <!--	//editables on first profile page
+				$.fn.editable.defaults.mode = 'inline';
+				$.fn.editableform.loading = "<div class='editableform-loading'><i class='ace-icon fa fa-spinner fa-spin fa-2x light-blue'></i></div>";
+			    $.fn.editableform.buttons = '<button type="submit" class="btn btn-info editable-submit"><i class="ace-icon fa fa-check"></i></button>'+
+			                                '<button type="button" class="btn editable-cancel"><i class="ace-icon fa fa-times"></i></button>';    
+				
+				//editables 
+				
+				//text editable
+			    $('#username')
+				.editable({
+					type: 'text',
+					name: 'username'
+			    });
+			
+			
+				
+				//select2 editable
+				var countries = [];
+			    $.each({ "CA": "Canada", "IN": "India", "NL": "Netherlands", "TR": "Turkey", "US": "United States"}, function(k, v) {
+			        countries.push({id: k, text: v});
+			    });
+			
+				var cities = [];
+				cities["CA"] = [];
+				$.each(["Toronto", "Ottawa", "Calgary", "Vancouver"] , function(k, v){
+					cities["CA"].push({id: v, text: v});
+				});
+				cities["IN"] = [];
+				$.each(["Delhi", "Mumbai", "Bangalore"] , function(k, v){
+					cities["IN"].push({id: v, text: v});
+				});
+				cities["NL"] = [];
+				$.each(["Amsterdam", "Rotterdam", "The Hague"] , function(k, v){
+					cities["NL"].push({id: v, text: v});
+				});
+				cities["TR"] = [];
+				$.each(["Ankara", "Istanbul", "Izmir"] , function(k, v){
+					cities["TR"].push({id: v, text: v});
+				});
+				cities["US"] = [];
+				$.each(["New York", "Miami", "Los Angeles", "Chicago", "Wysconsin"] , function(k, v){
+					cities["US"].push({id: v, text: v});
+				});
+				
+				var currentValue = "NL";
+			    $('#country').editable({
+					type: 'select2',
+					value : 'NL',
+					//onblur:'ignore',
+			        source: countries,
+					select2: {
+						'width': 140
+					},		
+					success: function(response, newValue) {
+						if(currentValue == newValue) return;
+						currentValue = newValue;
+						
+						var new_source = (!newValue || newValue == "") ? [] : cities[newValue];
+						
+						//the destroy method is causing errors in x-editable v1.4.6+
+						//it worked fine in v1.4.5
+						/**			
+						$('#city').editable('destroy').editable({
+							type: 'select2',
+							source: new_source
+						}).editable('setValue', null);
+						*/
+						
+						//so we remove it altogether and create a new element
+						var city = $('#city').removeAttr('id').get(0);
+						$(city).clone().attr('id', 'city').text('Select City').editable({
+							type: 'select2',
+							value : null,
+							//onblur:'ignore',
+							source: new_source,
+							select2: {
+								'width': 140
+							}
+						}).insertAfter(city);//insert it after previous instance
+						$(city).remove();//remove previous instance
+						
+					}
+			    });
+			
+				$('#city').editable({
+					type: 'select2',
+					value : 'Amsterdam',
+					//onblur:'ignore',
+			        source: cities[currentValue],
+					select2: {
+						'width': 140
+					}
+			    });
+			
+			
+				
+				//custom date editable
+				$('#signup').editable({
+					type: 'adate',
+					date: {
+						//datepicker plugin options
+						    format: 'yyyy/mm/dd',
+						viewformat: 'yyyy/mm/dd',
+						 weekStart: 1
+						 
+						//,nativeUI: true//if true and browser support input[type=date], native browser control will be used
+						//,format: 'yyyy-mm-dd',
+						//viewformat: 'yyyy-mm-dd'
+					}
+				})
+			
+			    $('#age').editable({
+			        type: 'spinner',
+					name : 'age',
+					spinner : {
+						min : 16,
+						max : 99,
+						step: 1,
+						on_sides: true
+						//,nativeUI: true//if true and browser support input[type=number], native browser control will be used
+					}
+				});
+				
+			
+			    $('#login').editable({
+			        type: 'slider',
+					name : 'login',
+					
+					slider : {
+						 min : 1,
+						  max: 50,
+						width: 100
+						//,nativeUI: true//if true and browser support input[type=range], native browser control will be used
+					},
+					success: function(response, newValue) {
+						if(parseInt(newValue) == 1)
+							$(this).html(newValue + " hour ago");
+						else $(this).html(newValue + " hours ago");
+					}
+				});
+			
+				$('#about').editable({
+					mode: 'inline',
+			        type: 'wysiwyg',
+					name : 'about',
+			
+					wysiwyg : {
+						//css : {'max-width':'300px'}
+					},
+					success: function(response, newValue) {
+					}
+				});
+				-->
+				
+				
+				// *** editable avatar *** //
+				try {//ie8 throws some harmless exceptions, so let's catch'em
+			
+					//first let's add a fake appendChild method for Image element for browsers that have a problem with this
+					//because editable plugin calls appendChild, and it causes errors on IE at unpredicted points
+					try {
+						document.createElement('IMG').appendChild(document.createElement('B'));
+					} catch(e) {
+						Image.prototype.appendChild = function(el){}
+					}
+			
+					var last_gritter
+					$('#avatar').editable({
+						type: 'image',
+						name: 'avatar',
+						value: null,
+						image: {
+							//specify ace file input plugin's options here
+							btn_choose: 'Change Avatar',
+							droppable: true,
+							maxSize: 110000,//~100Kb
+			
+							//and a few extra ones here
+							name: 'avatar',//put the field name here as well, will be used inside the custom plugin
+							on_error : function(error_type) {//on_error function will be called when the selected file has a problem
+								if(last_gritter) $.gritter.remove(last_gritter);
+								if(error_type == 1) {//file format error
+									last_gritter = $.gritter.add({
+										title: 'File is not an image!',
+										text: 'Please choose a jpg|gif|png image!',
+										class_name: 'gritter-error gritter-center'
+									});
+								} else if(error_type == 2) {//file size rror
+									last_gritter = $.gritter.add({
+										title: 'File too big!',
+										text: 'Image size should not exceed 100Kb!',
+										class_name: 'gritter-error gritter-center'
+									});
+								}
+								else {//other error
+								}
+							},
+							on_success : function() {
+								$.gritter.removeAll();
+							}
+						},
+					    url: function(params) {
+							// ***UPDATE AVATAR HERE*** //
+							//for a working upload example you can replace the contents of this function with 
+							//examples/profile-avatar-update.js
+			
+							var deferred = new $.Deferred
+			
+							var value = $('#avatar').next().find('input[type=hidden]:eq(0)').val();
+							if(!value || value.length == 0) {
+								deferred.resolve();
+								return deferred.promise();
+							}
+			
+			
+							//dummy upload
+							setTimeout(function(){
+								if("FileReader" in window) {
+									//for browsers that have a thumbnail of selected image
+									var thumb = $('#avatar').next().find('img').data('thumb');
+									if(thumb) $('#avatar').get(0).src = thumb;
+								}
+								
+								deferred.resolve({'status':'OK'});
+			
+								if(last_gritter) $.gritter.remove(last_gritter);
+								last_gritter = $.gritter.add({
+									title: 'Avatar Updated!',
+									text: 'Uploading to server can be easily implemented. A working example is included with the template.',
+									class_name: 'gritter-info gritter-center'
+								});
+								
+							 } , parseInt(Math.random() * 800 + 800))
+			
+							return deferred.promise();
+							
+							// ***END OF UPDATE AVATAR HERE*** //
+						},
+						
+						success: function(response, newValue) {
+						}
+					})
+				}catch(e) {} 
+				
+				/**
+				//let's display edit mode by default?
+				var blank_image = true;//somehow you determine if image is initially blank or not, or you just want to display file input at first
+				if(blank_image) {
+					$('#avatar').editable('show').on('hidden', function(e, reason) {
+						if(reason == 'onblur') {
+							$('#avatar').editable('show');
+							return;
+						}
+						$('#avatar').off('hidden');
+					})
+				}
+				*/
+			
+				//another option is using modals
+				$('#avatar2').on('click', function(){
+					var modal = 
+					'<div class="modal fade">\
+					  <div class="modal-dialog">\
+					   <div class="modal-content">\
+						<div class="modal-header">\
+							<button type="button" class="close" data-dismiss="modal">&times;</button>\
+							<h4 class="blue">Change Avatar</h4>\
+						</div>\
+						\
+						<form class="no-margin">\
+						 <div class="modal-body">\
+							<div class="space-4"></div>\
+							<div style="width:75%;margin-left:12%;"><input type="file" name="file-input" /></div>\
+						 </div>\
+						\
+						 <div class="modal-footer center">\
+							<button type="submit" class="btn btn-sm btn-success"><i class="ace-icon fa fa-check"></i> Submit</button>\
+							<button type="button" class="btn btn-sm" data-dismiss="modal"><i class="ace-icon fa fa-times"></i> Cancel</button>\
+						 </div>\
+						</form>\
+					  </div>\
+					 </div>\
+					</div>';
+					
+					
+					var modal = $(modal);
+					modal.modal("show").on("hidden", function(){
+						modal.remove();
+					});
+			
+					var working = false;
+			
+					var form = modal.find('form:eq(0)');
+					var file = form.find('input[type=file]').eq(0);
+					file.ace_file_input({
+						style:'well',
+						btn_choose:'Click to choose new avatar',
+						btn_change:null,
+						no_icon:'ace-icon fa fa-picture-o',
+						thumbnail:'small',
+						before_remove: function() {
+							//don't remove/reset files while being uploaded
+							return !working;
+						},
+						allowExt: ['jpg', 'jpeg', 'png', 'gif'],
+						allowMime: ['image/jpg', 'image/jpeg', 'image/png', 'image/gif']
+					});
+			
+					form.on('submit', function(){
+						if(!file.data('ace_input_files')) return false;
+						
+						file.ace_file_input('disable');
+						form.find('button').attr('disabled', 'disabled');
+						form.find('.modal-body').append("<div class='center'><i class='ace-icon fa fa-spinner fa-spin bigger-150 orange'></i></div>");
+						
+						var deferred = new $.Deferred;
+						working = true;
+						deferred.done(function() {
+							form.find('button').removeAttr('disabled');
+							form.find('input[type=file]').ace_file_input('enable');
+							form.find('.modal-body > :last-child').remove();
+							
+							modal.modal("hide");
+			
+							var thumb = file.next().find('img').data('thumb');
+							if(thumb) $('#avatar2').get(0).src = thumb;
+			
+							working = false;
+						});
+						
+						
+						setTimeout(function(){
+							deferred.resolve();
+						} , parseInt(Math.random() * 800 + 800));
+			
+						return false;
+					});
+							
+				});
+			
+				
+			
+				//////////////////////////////
+				$('#profile-feed-1').ace_scroll({
+					height: '250px',
+					mouseWheelLock: true,
+					alwaysVisible : true
+				});
+			
+				$('a[ data-original-title]').tooltip();
+			
+				$('.easy-pie-chart.percentage').each(function(){
+				var barColor = $(this).data('color') || '#555';
+				var trackColor = '#E2E2E2';
+				var size = parseInt($(this).data('size')) || 72;
+				$(this).easyPieChart({
+					barColor: barColor,
+					trackColor: trackColor,
+					scaleColor: false,
+					lineCap: 'butt',
+					lineWidth: parseInt(size/10),
+					animate:false,
+					size: size
+				}).css('color', barColor);
+				});
+			  
+				///////////////////////////////////////////
+			
+				//right & left position
+				//show the user info on right or left depending on its position
+				$('#user-profile-2 .memberdiv').on('mouseenter touchstart', function(){
+					var $this = $(this);
+					var $parent = $this.closest('.tab-pane');
+			
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $this.offset();
+					var w2 = $this.width();
+			
+					var place = 'left';
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) place = 'right';
+					
+					$this.find('.popover').removeClass('right left').addClass(place);
+				}).on('click', function(e) {
+					e.preventDefault();
+				});
+			
+			
+				///////////////////////////////////////////
+				$('#user-profile-3')
+				.find('input[type=file]').ace_file_input({
+					style:'well',
+					btn_choose:'Change avatar',
+					btn_change:null,
+					no_icon:'ace-icon fa fa-picture-o',
+					thumbnail:'large',
+					droppable:true,
+					
+					allowExt: ['jpg', 'jpeg', 'png', 'gif'],
+					allowMime: ['image/jpg', 'image/jpeg', 'image/png', 'image/gif']
+				})
+				.end().find('button[type=reset]').on(ace.click_event, function(){
+					$('#user-profile-3 input[type=file]').ace_file_input('reset_input');
+				})
+				.end().find('.date-picker').datepicker().next().on(ace.click_event, function(){
+					$(this).prev().focus();
+				})
+				$('.input-mask-phone').mask('(999) 999-9999');
+			
+				$('#user-profile-3').find('input[type=file]').ace_file_input('show_file_list', [{type: 'image', name: $('#avatar').attr('src')}]);
+			
+			
+				////////////////////
+				//change profile
+				$('[data-toggle="buttons"] .btn').on('click', function(e){
+					var target = $(this).find('input[type=radio]');
+					var which = parseInt(target.val());
+					$('.user-profile').parent().addClass('hide');
+					$('#user-profile-'+which).parent().removeClass('hide');
+				});
+				
+				
+				
+				/////////////////////////////////////
+				$(document).one('ajaxloadstart.page', function(e) {
+					//in ajax mode, remove remaining elements before leaving page
+					try {
+						$('.editable').editable('destroy');
+					} catch(e) {}
+					$('[class*=select2]').remove();
+				});
+			});
+		</script> 
+
+
+		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
+		<script src="resources/assets/js/ace/elements.onpage-help.js"></script>
+		<script src="resources/assets/js/ace/ace.onpage-help.js"></script>
+		<script src="resources/assets/docs/assets/js/rainbow.js"></script>
+		<script src="resources/assets/docs/assets/js/language/generic.js"></script>
+		<script src="resources/assets/docs/assets/js/language/html.js"></script>
+		<script src="resources/assets/docs/assets/js/language/css.js"></script>
+		<script src="resources/assets/docs/assets/js/language/javascript.js"></script>
+	</body>
+</html>
